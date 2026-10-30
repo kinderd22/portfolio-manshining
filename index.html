@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ManShining — Content Producer</title>
+<meta name="description" content="Портфолио контент-продюсера, рилс-мейкера и монтажёра Mikhail ManShining">
+<meta name="theme-color" content="#1D1D1D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon fill='%23A1D5E2' points='50.00,0.00 56.44,17.63 69.13,3.81 68.33,22.56 85.36,14.64 77.44,31.67 96.19,30.87 82.37,43.56 100.00,50.00 82.37,56.44 96.19,69.13 77.44,68.33 85.36,85.36 68.33,77.44 69.13,96.19 56.44,82.37 50.00,100.00 43.56,82.37 30.87,96.19 31.67,77.44 14.64,85.36 22.56,68.33 3.81,69.13 17.63,56.44 0.00,50.00 17.63,43.56 3.81,30.87 22.56,31.67 14.64,14.64 31.67,22.56 30.87,3.81 43.56,17.63'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="./css/styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="star" viewBox="0 0 100 100"><polygon fill="currentColor" points="50.00,0.00 56.44,17.63 69.13,3.81 68.33,22.56 85.36,14.64 77.44,31.67 96.19,30.87 82.37,43.56 100.00,50.00 82.37,56.44 96.19,69.13 77.44,68.33 85.36,85.36 68.33,77.44 69.13,96.19 56.44,82.37 50.00,100.00 43.56,82.37 30.87,96.19 31.67,77.44 14.64,85.36 22.56,68.33 3.81,69.13 17.63,56.44 0.00,50.00 17.63,43.56 3.81,30.87 22.56,31.67 14.64,14.64 31.67,22.56 30.87,3.81 43.56,17.63"/></symbol>
+</svg>
+
+<header class="site-header" id="top">
+  <a class="brand" href="./index.html">[Mikhail ManShining | Content-Producer]</a>
+  <button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню" data-burger>
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+    <a href="./horizontal.html">Горизонтальные проекты</a>
+    <a href="./vertical.html">Вертикальный контент</a>
+    <a href="#contacts">Контакты</a>
+    <a href="#about">Обо мне</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ============ 1. SHOWREEL (фоновое видео) ============
+     Видео: assets/videos/showreel-bg.mp4 · Обложка: assets/images/showreel-poster.jpg -->
+<section class="hero" aria-label="Showreel">
+  <video class="hero__video" muted loop playsinline autoplay preload="auto"
+         poster="./assets/images/showreel-poster.jpg" aria-hidden="true" tabindex="-1" data-hero-video>
+    <source src="./assets/videos/showreel-bg.mp4" type="video/mp4">
+  </video>
+  <div class="hero__shade" aria-hidden="true"></div>
+  <h1 class="hero__title"><span class="hero__name">MANSHINING</span><span class="hero__role">content - producer</span></h1>
+  <span class="hero__tag">шоурил</span>
+  <button class="hero__toggle" type="button" aria-pressed="false" data-hero-toggle>Пауза</button>
+</section>
+
+<!-- ============ 2. PROJECTS: выбор направления ============ -->
+<section class="pick" aria-labelledby="pick-title" data-reveal>
+  <h2 class="pick__title" id="pick-title">PROJECTS</h2>
+  <div class="pick__grid">
+    <a class="pick__side pick__side--h" href="./horizontal.html" aria-label="Горизонтальные проекты">
+      <span class="pick__label">[ FILM / HORIZONTAL PROJECTS · 16:9 ]</span>
+      <!-- Обложка: замени <span class="ph">…</span> на <img src="./assets/images/cover-horizontal.jpg" alt="Горизонтальные проекты"> -->
+      <span class="pick__frame pick__frame--h"><span class="ph"><b>16:9</b><span>пример</span></span></span>
+      <span class="pick__name">горизонт</span>
+    </a>
+    <span class="pick__slash" aria-hidden="true">/</span>
+    <a class="pick__side pick__side--v" href="./vertical.html" aria-label="Вертикальный контент">
+      <span class="pick__label">[ VERTICAL CONTENT · 9:16 ]</span>
+      <!-- Обложки: замени <span class="ph">…</span> на <img src="./assets/images/cover-vertical-1.jpg" alt="…"> -->
+      <span class="pick__row">
+        <span class="pick__frame pick__frame--v"><span class="ph">пример</span></span>
+        <span class="pick__frame pick__frame--v"><span class="ph"><b>9:16</b><span>пример</span></span></span>
+        <span class="pick__frame pick__frame--v"><span class="ph">пример</span></span>
+      </span>
+      <span class="pick__name">вертикаль</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ 3. ИЗБРАННЫЕ ПРОЕКТЫ ============ -->
+<section class="sel" id="featured" aria-labelledby="sel-title">
+  <div class="sel__head" data-reveal>
+    <h2 id="sel-title">Избранные проекты</h2>
+    <!-- «all projects» ведёт на страницу горизонтальных проектов; поменяй href при необходимости -->
+    <a class="pill" href="./horizontal.html">all projects<svg class="star" aria-hidden="true" focusable="false"><use href="#star"/></svg></a>
+  </div>
+  <div class="sel__field" data-reveal>
+      <!-- Проект 1: впиши название, роль; видео — в data-video (файл) или data-embed (ссылка-плеер); обложку — в data-poster -->
+      <button class="card card--h" type="button" style="--x:0%;--y:1.1%;--w:40.7%"
+        data-video="" data-embed="" data-poster="" data-title="[Название проекта]">
+        <span class="card__media"><span class="ph">пример</span></span>
+        <span class="card__cap"><span class="card__name">[Название проекта]</span><span class="card__meta">КОРОТКОМЕТРАЖНЫЕ ФИЛЬМЫ · [МОЯ РОЛЬ]</span></span>
+      </button>
+      <!-- Проект 2: впиши название, роль; видео — в data-video (файл) или data-embed (ссылка-плеер); обложку — в data-poster -->
+      <button class="card card--s" type="button" style="--x:58%;--y:9.4%;--w:17.9%"
+        data-video="" data-embed="" data-poster="" data-title="[Название проекта]">
+        <span class="card__media"><span class="ph">пример</span></span>
+        <span class="card__cap"><span class="card__name">[Название проекта]</span><span class="card__meta">РИЛСЫ · [МОЯ РОЛЬ]</span></span>
+      </button>
+      <!-- Проект 3: впиши название, роль; видео — в data-video (файл) или data-embed (ссылка-плеер); обложку — в data-poster -->
+      <button class="card card--v" type="button" style="--x:29%;--y:26.4%;--w:15.3%"
+        data-video="" data-embed="" data-poster="" data-title="[Название проекта]">
+        <span class="card__media"><span class="ph">пример</span></span>
+        <span class="card__cap"><span class="card__name">[Название проекта]</span><span class="card__meta">РИЛСЫ · [МОЯ РОЛЬ]</span></span>
+      </button>
+      <!-- Проект 4: впиши название, роль; видео — в data-video (файл) или data-embed (ссылка-плеер); обложку — в data-poster -->
+      <button class="card card--s" type="button" style="--x:8.1%;--y:39.1%;--w:17.9%"
+        data-video="" data-embed="" data-poster="" data-title="[Название проекта]">
+        <span class="card__media"><span class="ph">пример</span></span>
+        <span class="card__cap"><span class="card__name">[Название проекта]</span><span class="card__meta">РИЛСЫ · [МОЯ РОЛЬ]</span></span>
+      </button>
+      <!-- Проект 5: впиши название, роль; видео — в data-video (файл) или data-embed (ссылка-плеер); обложку — в data-poster -->
+      <button class="card card--h" type="button" style="--x:56%;--y:40.2%;--w:40.7%"
+        data-video="" data-embed="" data-poster="" data-title="[Название проекта]">
+        <span class="card__media"><span class="ph">пример</span></span>
+        <span class="card__cap"><span class="card__name">[Название проекта]</span><span class="card__meta">КОРОТКОМЕТРАЖНЫЕ ФИЛЬМЫ · [МОЯ РОЛЬ]</span></span>
+      </button>
+      <!-- Проект 6: впиши название, роль; видео — в data-video (файл) или data-embed (ссылка-плеер); обложку — в data-poster -->
+      <button class="card card--v" type="button" style="--x:0%;--y:64.4%;--w:15.3%"
+        data-video="" data-embed="" data-poster="" data-title="[Название проекта]">
+        <span class="card__media"><span class="ph">пример</span></span>
+        <span class="card__cap"><span class="card__name">[Название проекта]</span><span class="card__meta">РИЛСЫ · [МОЯ РОЛЬ]</span></span>
+      </button>
+      <!-- Проект 7: впиши название, роль; видео — в data-video (файл) или data-embed (ссылка-плеер); обложку — в data-poster -->
+      <button class="card card--v card--end" type="button" style="--x:81.8%;--y:67.4%;--w:15.3%"
+        data-video="" data-embed="" data-poster="" data-title="[Название проекта]">
+        <span class="card__media"><span class="ph">пример</span></span>
+        <span class="card__cap"><span class="card__name">[Название проекта]</span><span class="card__meta">РИЛСЫ · [МОЯ РОЛЬ]</span></span>
+      </button>
+      <!-- Проект 8: впиши название, роль; видео — в data-video (файл) или data-embed (ссылка-плеер); обложку — в data-poster -->
+      <button class="card card--s" type="button" style="--x:29.6%;--y:77.7%;--w:17.9%"
+        data-video="" data-embed="" data-poster="" data-title="[Название проекта]">
+        <span class="card__media"><span class="ph">пример</span></span>
+        <span class="card__cap"><span class="card__name">[Название проекта]</span><span class="card__meta">РИЛСЫ · [МОЯ РОЛЬ]</span></span>
+      </button>
+  </div>
+</section>
+
+<!-- ============ 4. «ИДЕЯ МОНТАЖ…» + ОБО МНЕ ============ -->
+<section class="idea" data-reveal>
+  <p class="idea__text"><svg class="star" aria-hidden="true" focusable="false"><use href="#star"/></svg><span>Идея монтаж<br>и производство во мне</span></p>
+</section>
+
+<section class="about" id="about" aria-labelledby="about-title" data-reveal>
+  <h2 class="about__title" id="about-title">Обо мне :)</h2>
+  <div class="about__grid">
+    <!-- Фото: замени <span class="ph">…</span> на <img src="./assets/images/about.jpg" alt="Михаил ManShining"> -->
+    <div class="about__photo"><span class="ph">пример</span></div>
+    <div class="about__text">
+      <!-- ЗАМЕНИ: тексты ниже — заглушки из макета -->
+      <p>ТЕКСТ описания себя</p>
+      <p>возраст город</p>
+      <p>кратко история работы</p>
+      <p>мотивация</p>
+      <p>учеба</p>
+      <p>опыт</p>
+      <p>метафора или цель</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. УСЛУГИ С РАСКРЫТИЕМ ============ -->
+<section class="services" aria-labelledby="svc-title" data-reveal>
+  <div class="services__grid">
+    <h2 class="services__title" id="svc-title">Для чего я вам могу<br>быть нужен?</h2>
+      <div class="svc svc--1" data-svc>
+        <button class="svc__btn" type="button" id="svc1-btn" aria-expanded="false" aria-controls="svc1-panel"><span>современный монтаж</span></button>
+        <div class="svc__panel" id="svc1-panel" role="region" aria-labelledby="svc1-btn">
+          <div class="svc__inner"><div class="svc__text">
+            <!-- ЗАМЕНИ: описание услуги «современный монтаж» — сейчас строки-заглушки из макета -->
+            <p>кратко история работы</p>
+            <p>мотивация</p>
+            <p>учеба</p>
+            <p>опыт</p>
+            <p>метафора или цель</p>
+          </div></div>
+        </div>
+      </div>
+      <div class="svc svc--2" data-svc>
+        <button class="svc__btn" type="button" id="svc2-btn" aria-expanded="false" aria-controls="svc2-panel"><span>создание стратегии</span></button>
+        <div class="svc__panel" id="svc2-panel" role="region" aria-labelledby="svc2-btn">
+          <div class="svc__inner"><div class="svc__text">
+            <!-- ЗАМЕНИ: описание услуги «создание стратегии» — сейчас строки-заглушки из макета -->
+            <p>кратко история работы</p>
+            <p>мотивация</p>
+            <p>учеба</p>
+            <p>опыт</p>
+            <p>метафора или цель</p>
+          </div></div>
+        </div>
+      </div>
+      <div class="svc svc--3" data-svc>
+        <button class="svc__btn" type="button" id="svc3-btn" aria-expanded="false" aria-controls="svc3-panel"><span>продюссирование проектов</span></button>
+        <div class="svc__panel" id="svc3-panel" role="region" aria-labelledby="svc3-btn">
+          <div class="svc__inner"><div class="svc__text">
+            <!-- ЗАМЕНИ: описание услуги «продюссирование проектов» — сейчас строки-заглушки из макета -->
+            <p>кратко история работы</p>
+            <p>мотивация</p>
+            <p>учеба</p>
+            <p>опыт</p>
+            <p>метафора или цель</p>
+          </div></div>
+        </div>
+      </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Видеоплеер для карточек «Избранных проектов» -->
+<dialog class="modal" id="video-modal" aria-label="Видеоплеер">
+  <div class="modal__box">
+    <button class="modal__close" type="button" aria-label="Закрыть видео" data-modal-close>×</button>
+    <div class="modal__body" data-modal-body></div>
+    <p class="modal__title" data-modal-title></p>
+  </div>
+</dialog>
+
+<!-- ============ ОБЩИЙ ЗАКЛЮЧИТЕЛЬНЫЙ РАЗДЕЛ (одинаковый на всех страницах) ============
+     Контакты: открой js/main.js и заполни объект CONTACTS в самом начале файла. -->
+<section class="contact" id="contacts" aria-labelledby="contact-title">
+  <h2 class="contact__title" id="contact-title">
+    <span>Давайте обсудим</span>
+    <span class="contact__line">
+      <span class="accent">ваш проект</span>
+      <a class="pill pill--lg is-placeholder" data-contact="write" role="link" aria-disabled="true" title="Контакт ещё не добавлен">НАПИСАТЬ МНЕ<svg class="star" aria-hidden="true" focusable="false"><use href="#star"/></svg></a>
+    </span>
+  </h2>
+  <p class="contact__text">Расскажите о задаче - предложу формат,<br>соберу команду и доведу видео<br>от идеи до финального кадра.</p>
+  <ul class="contact__links">
+    <li><a class="is-placeholder" data-contact="telegram" role="link" aria-disabled="true" title="Ссылка ещё не добавлена">[Telegram]</a></li>
+    <li><a class="is-placeholder" data-contact="email" role="link" aria-disabled="true" title="Email ещё не добавлен">[Email]</a></li>
+    <li><a class="is-placeholder" data-contact="social" role="link" aria-disabled="true" title="Ссылка ещё не добавлена">[Социальные сети]</a></li>
+  </ul>
+</section>
+
+<footer class="site-footer">
+  <div class="site-footer__row">
+    <nav aria-label="Навигация в подвале" class="site-footer__nav">
+      <a href="./horizontal.html">Горизонтальные проекты</a>
+      <a href="./vertical.html">Вертикальный контент</a>
+      <a href="#contacts">Контакты</a>
+      <a href="#about">Обо мне</a>
+    </nav>
+    <ul class="site-footer__soc">
+      <li><a class="is-placeholder" data-contact="telegram" role="link" aria-disabled="true">[Telegram]</a></li>
+      <li><a class="is-placeholder" data-contact="email" role="link" aria-disabled="true">[Email]</a></li>
+      <li><a class="is-placeholder" data-contact="social" role="link" aria-disabled="true">[Социальные сети]</a></li>
+    </ul>
+  </div>
+  <div class="site-footer__row site-footer__row--end">
+    <p class="site-footer__tags">VERTICAL / FILM / COMMERCIAL</p>
+    <p>2026 поля киндер</p>
+  </div>
+  <p class="site-footer__copy">© [Mikhail ManShining | Content-Producer]</p>
+</footer>
+<script src="./js/main.js"></script>
+</body>
+</html>
